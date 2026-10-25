@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Snapchat Without Watermark Video Downloader</title>
+<meta name="description" content="Paste a public Snapchat Spotlight or story link and download the video without the Snapchat logo. Free, no login.">
+<meta name="theme-color" content="#FFFC00">
+<meta property="og:title" content="Snapchat Without Watermark Video Downloader">
+<meta property="og:description" content="Snapchat Spotlight & public story videos — bina logo ke download karo. Free, no login.">
+<meta property="og:image" content="/og.png">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top">
+  <img src="/logo.svg" alt="" width="40" height="40" class="logo">
+  <span class="brand">Snapchat Video Downloader</span>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <h1 id="h1" class="blue">Snapchat Without Watermark Video Downloader</h1>
+    <p class="sub">Public Spotlight ya public story ka link paste karo → Download. <span class="en">Paste a public Spotlight or story link.</span></p>
+
+    <form id="form" class="card" novalidate>
+      <label for="url" class="label">Snapchat link</label>
+      <div class="row">
+        <input id="url" name="url" type="url" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false"
+               placeholder="https://snapchat.com/spotlight/…  ya  t.snapchat.com/…" required>
+        <button type="button" id="paste" class="ghost" aria-label="Paste from clipboard">Paste</button>
+      </div>
+      <button type="submit" id="go" class="primary">Download</button>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section id="results" class="results" aria-label="Results" hidden></section>
+
+  <section class="how card" aria-labelledby="how">
+    <h2 id="how">Kaise use karein · How it works</h2>
+    <ol>
+      <li>Snapchat mein video pe <b>Share → Copy Link</b> dabao.</li>
+      <li>Upar box mein paste karo, <b>Download</b> dabao.</li>
+      <li>Preview dekho, phir <b>Download MP4</b> — video phone mein save.</li>
+    </ol>
+    <ul class="facts">
+      <li>Bina Snapchat logo wali clean copy <b>480p</b> mein aati hai. Creator ka apna text/sticker video mein hi rehta hai.</li>
+      <li>Sirf <b>public</b> Spotlight aur public story. Private snaps aur friends-only stories nahi chalengi.</li>
+      <li>Kuch save nahi hota — video seedha Snapchat se aapke phone tak aata hai.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>For personal use / with the creator's permission. Not affiliated with Snapchat.</p>
+  <p class="tiny">No ads · No login · Nothing stored</p>
+</footer>
+
+<template id="item-tpl">
+  <article class="card item">
+    <div class="media"></div>
+    <p class="meta"></p>
+    <p class="note"></p>
+    <a class="primary dl" download>Download MP4</a>
+  </article>
+</template>
+<script src="/script.js"></script>
+</body>
+</html>
